@@ -4,11 +4,10 @@ import moment from "moment";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
-// import Loader from './Loader';
+import Loader from "./Loader";
 
 const demoImage =
 	"http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg";
-// "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -22,7 +21,7 @@ const News = ({ simplified }) => {
 	});
 
 	// if (!cryptoNews?.value) return <Loader />;
-	if (isFetching) return "Loading...";
+	if (isFetching) return <Loader />;
 	// console.log(simplified);
 	return (
 		<Row gutter={[24, 24]}>

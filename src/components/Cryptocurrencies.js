@@ -23,6 +23,8 @@ const Cryptocurrencies = ({ simplified }) => {
 
 	if (isFetching) return "Loading...";
 
+	console.log(cryptos);
+
 	return (
 		<>
 			{!simplified && (
@@ -40,9 +42,9 @@ const Cryptocurrencies = ({ simplified }) => {
 						sm={12}
 						lg={6}
 						className="crypto-card"
-						key={currency.id}
+						key={currency.uuid}
 					>
-						<Link to={`/crypto/${currency.id}`}>
+						<Link to={`/crypto/${currency.uuid}`}>
 							<Card
 								title={`${currency.rank}. ${currency.name}`}
 								extra={

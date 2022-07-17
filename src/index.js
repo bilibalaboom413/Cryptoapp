@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import "antd/dist/antd.css"; // import antd
+import "antd/dist/antd.min.css"; // import antd with react-script 5.0.0
 
 import { Provider } from "react-redux";
 import store from "./app/store";

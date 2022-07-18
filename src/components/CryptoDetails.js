@@ -144,7 +144,7 @@ const CryptoDetails = () => {
 							{cryptoDetails.name} Value statistics
 						</Title>
 						<p>
-							An overview showing the stats of
+							An overview showing the stats of{" "}
 							{cryptoDetails.name}
 						</p>
 					</Col>

@@ -8,6 +8,7 @@ import {
 	CryptoDetails,
 	News,
 } from "./components";
+
 import "./App.css";
 
 function App() {
@@ -37,21 +38,6 @@ function App() {
 								element={<CryptoDetails />}
 							/>
 							<Route exact path="/news" element={<News />} />
-							{/* <Route exact path="/">
-								<Homepage />
-							</Route> */}
-							{/* <Route exact path="/exchanges">
-								<Exchanges />
-							</Route> */}
-							{/* <Route exact path="/cryptocurrencies">
-								<Cryptocurrencies />
-							</Route>
-							<Route exact path="/crypto/:coinId">
-								<CryptoDetails />
-							</Route>
-							<Route exact path="/news">
-								<News />
-							</Route> */}
 						</Routes>
 					</div>
 				</Layout>

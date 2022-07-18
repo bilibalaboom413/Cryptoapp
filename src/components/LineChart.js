@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Col, Row, Typography } from "antd";
-// Bug 2, add this to show the line chart
+// * add this to show the line chart for chartjs-2
 import { Chart as ChartJS } from "chart.js/auto";
 
 const { Title } = Typography;
